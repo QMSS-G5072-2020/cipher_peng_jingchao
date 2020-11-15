@@ -2,26 +2,27 @@ def cipher(text, shift, encrypt=True):
     """
     This is a function to encipher or decipher code and is called caesar cipher.
     
-    Input
-    ---------
+    Parameters
+    ----------
     text: str
-           A string that you want to encrypt or decrypt. 
+        A string that you want to encrypt or decrypt.
     shift: int
-           An integer which infers positions you want to change the text from the original format. It can be both positive and negative. Positive shift means shift forward, while negative one means shift backward.
+        An integer which infers positions you want to change the text from the original format. It can be both positive and negative. Positive shift means shift forward, while negative one means shift backward.
     encrypt: bool
-           A boolean value which will encipher the text if it is True, otherwise, it will decipher the text. The default value is True.
-    
-    Output
-    ---------
+        A boolean value which will encipher the text if it is True, otherwise, it will decipher the text. The default value is True.
+        
+    Returns
+    -------
     str
-           The new text after enciphering or deciphering.
-    
-    Examples:
+        The new text after enciphering or deciphering.
+        
+    Examples
+    --------
     >>> from cipher_jp4100 import cipher_jp4100
     >>> cipher_jp4100.cipher(text='abc', shift=3, encrypt=True)
-          'def'
+    'def'
     >>> cipher_jp4100.cipher(text='abc', shift=3, encrypt=False)
-          'XYZ'
+    'XYZ'
     """
     alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
     new_text = ''

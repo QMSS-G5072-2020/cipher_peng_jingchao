@@ -42,26 +42,27 @@
 <dt id="cipher_jp4100.cipher_jp4100.cipher">
 <code class="sig-prename descclassname">cipher_jp4100.cipher_jp4100.</code><code class="sig-name descname">cipher</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="n">shift</span></em>, <em class="sig-param"><span class="n">encrypt</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/cipher_jp4100/cipher_jp4100.html#cipher"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cipher_jp4100.cipher_jp4100.cipher" title="Permalink to this definition">¶</a></dt>
 <dd><p>This is a function to encipher or decipher code and is called caesar cipher.</p>
-<dl class="simple">
-<dt>text: str</dt><dd><p>A string that you want to encrypt or decrypt.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – A string that you want to encrypt or decrypt.</p></li>
+<li><p><strong>shift</strong> (<em>int</em>) – An integer which infers positions you want to change the text from the original format. It can be both positive and negative. Positive shift means shift forward, while negative one means shift backward.</p></li>
+<li><p><strong>encrypt</strong> (<em>bool</em>) – A boolean value which will encipher the text if it is True, otherwise, it will decipher the text. The default value is True.</p></li>
+</ul>
 </dd>
-<dt>shift: int</dt><dd><p>An integer which infers positions you want to change the text from the original format. It can be both positive and negative. Positive shift means shift forward, while negative one means shift backward.</p>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The new text after enciphering or deciphering.</p>
 </dd>
-<dt>encrypt: bool</dt><dd><p>A boolean value which will encipher the text if it is True, otherwise, it will decipher the text. The default value is True.</p>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
 </dd>
 </dl>
-<dl class="simple">
-<dt>str</dt><dd><p>The new text after enciphering or deciphering.</p>
-</dd>
-</dl>
-<p>Examples:
-&gt;&gt;&gt; from cipher_jp4100 import cipher_jp4100
-&gt;&gt;&gt; cipher_jp4100.cipher(text=’abc’, shift=3, encrypt=True)</p>
-<blockquote>
-<div><p>‘def’</p>
-</div></blockquote>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cipher_jp4100</span><span class="o">.</span><span class="n">cipher</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s1">&#39;abc&#39;</span><span class="p">,</span> <span class="n">shift</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">encrypt</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="go">      &#39;XYZ&#39;</span>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">cipher_jp4100</span> <span class="kn">import</span> <span class="n">cipher_jp4100</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cipher_jp4100</span><span class="o">.</span><span class="n">cipher</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s1">&#39;abc&#39;</span><span class="p">,</span> <span class="n">shift</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">encrypt</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="go">&#39;def&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cipher_jp4100</span><span class="o">.</span><span class="n">cipher</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s1">&#39;abc&#39;</span><span class="p">,</span> <span class="n">shift</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">encrypt</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="go">&#39;XYZ&#39;</span>
 </pre></div>
 </div>
 </dd></dl>
